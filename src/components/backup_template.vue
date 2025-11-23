@@ -40,4 +40,14 @@ const count = ref(0)
 .read-the-docs {
   color: #888;
 }
+
+h1 {
+    will-change: filter;
+    transition: filter 300ms;
+}
+h1:hover {
+    filter: drop-shadow(4px 4px 5em gold);
+}
+
+
 </style>

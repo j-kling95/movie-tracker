@@ -1,24 +1,35 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
+import movies from '../assets/movies.csv'
 
 const pages = [
     { name: 'All' },
     { name: 'Watched' },
     { name: 'TBW' }
-]
+];
+
+const activePage = ref(0);
+
+const movieList = movies;
 
 </script>
 
 <template>
     <ul>
         <div class="home-container">
-            <li class="logo"><img src="../assets/platypus-logo.png" alt="Ernie-Logo"></li>
+            <li class="logo"><a href="#" @click="activePage = 0"><img src="../assets/platypus-logo.png" alt="Ernie-Logo"></a></li>
         </div>
         <div class="link-container">
 
-        <li class="logo-links" v-for="(page, index) in pages">{{ page.name }}</li>
+        <li class="logo-links" v-for="(page, index) in pages">
+            <a href="#" @click="activePage = index + 1">{{ page.name }}</a></li>
         </div>
+        <p>{{ activePage }}</p>
     </ul>
+
+    <div v-for="result in movieList">
+        <p> {{ result.name }}</p>
+    </div>
 </template>
 
 <style scoped>

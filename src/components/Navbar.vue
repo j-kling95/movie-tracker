@@ -1,7 +1,7 @@
 <script setup>
 import { ref, reactive } from "vue";
 
-const pages = [{ name: "All" }, { name: "Watched" }, { name: "TBW" }];
+const pages = [{ name: "All" }, { name: "Watched" }, { name: "Watchlist" }];
 
 const activePage = ref(0);
 
@@ -60,6 +60,19 @@ ul {
   background-color: rgb(54, 52, 46);
   border-radius: 50%;
   border: 2px solid rgb(152, 117, 51);
+}
+
+@media (max-width: 640px) {
+
+    .link-container {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start; 
+    }
 }
 
 .link-container {

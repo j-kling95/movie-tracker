@@ -17,6 +17,14 @@ import Navbar from "../Navbar.vue";
 <style scoped>
 .layout {
   padding: 1rem 2rem;
+  
+}
+
+header,
+footer,
+main {
+  max-width: 700px;
+
 }
 
 main {

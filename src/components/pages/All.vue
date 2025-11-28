@@ -1,10 +1,10 @@
 <script setup>
+import Result from '../Result.vue';
 </script>
 
 <template>
   <h2>
-    [THIS IS A PLACEHOLDER FOR THE LIST OF ALL MOVIES] <br />
-    A short description should be placed here
+  Showing all movies
   </h2>
 </template>
 

@@ -91,12 +91,12 @@ ul {
 }
 
 .pages:hover {
-  background-color: rgb(68, 68, 67);
+  background-color: rgb(68, 68, 68);
   border-color: rgb(152, 117, 51);
 }
 
 .active {
-  background-color: rgb(68, 68, 67);
+  background-color: rgb(68, 68, 68);
   border-color: rgb(152, 117, 51);
 }
 

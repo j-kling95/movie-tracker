@@ -28,6 +28,6 @@ div {
   background-color: rgb(47, 47, 47);
   border: 1px solid transparent;
   border-radius: 10px;
-  box-shadow: 0 0 4px #656565;
+  box-shadow: 0 0 2px #656565;
 }
 </style>

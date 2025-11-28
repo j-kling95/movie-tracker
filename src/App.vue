@@ -1,6 +1,5 @@
 <script setup>
 //import HelloWorld from './components/HelloWorld.vue'
-import Navbar from "./components/Navbar.vue";
 import Layout from "./components/layouts/Layout.vue";
 import All from "./components/pages/All.vue"
 import Home from "./components/pages/Home.vue"

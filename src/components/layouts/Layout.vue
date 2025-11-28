@@ -16,7 +16,10 @@ import Navbar from "../Navbar.vue";
 
 <style scoped>
 .layout {
-  padding: 2rem;
+  padding: 1rem 2rem;
+}
 
+main {
+    padding: 2rem 0;
 }
 </style>

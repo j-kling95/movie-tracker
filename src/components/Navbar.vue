@@ -1,18 +1,16 @@
 <script setup>
 import { ref, reactive } from "vue";
-import movies from "../assets/movies.csv";
 
 const pages = [{ name: "All" }, { name: "Watched" }, { name: "TBW" }];
 
 const activePage = ref(0);
 
-const movieList = movies;
 </script>
 
 <template>
   <div id="navbar">
     <ul>
-      <div class="home-container">
+      <div class="home-container" :class="{activelogo: activePage == 0}">
         <li class="logo">
           <a href="#" @click="activePage = 0"
             ><img src="../assets/platypus-logo.png" alt="Ernie-Logo"
@@ -21,19 +19,24 @@ const movieList = movies;
       </div>
       <div class="link-container">
         <li class="logo-links" v-for="(page, index) in pages">
-          <a href="#" @click="activePage = index + 1">{{ page.name }}</a>
+          <a
+            href="#"
+            class="pages"
+            @click="activePage = index + 1"
+            :class="{ active: activePage == index + 1 }"
+            >{{ page.name }}</a
+          >
         </li>
       </div>
-      <p>{{ activePage }}</p>
     </ul>
-  </div>
-
-  <div v-for="result in movieList">
-    <p>{{ result.name }}</p>
   </div>
 </template>
 
 <style scoped>
+#navbar {
+  padding-bottom: 0;
+  border-bottom: 1px solid #656565;
+}
 ul {
   display: flex;
   list-style: none;
@@ -42,16 +45,46 @@ ul {
   padding: 0;
 }
 
-.link-container {
-  display: flex;
-  gap: 2em;
+.home-container {
+    border: 7px solid transparent;
+    border-radius: 100%;
 }
+
+.activelogo {
+    border-color: rgb(68, 68, 67)
+}
+
 .logo {
   width: 70px;
   height: 70px;
   background-color: rgb(54, 52, 46);
   border-radius: 50%;
   border: 2px solid rgb(152, 117, 51);
+}
+
+.link-container {
+  display: flex;
+  gap: 2em;
+}
+
+
+.pages {
+  text-decoration: none;
+  color: rgb(152, 117, 51);
+  padding: 0.5rem 1rem;
+  background-color: rgb(54, 52, 46);
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.pages:hover {
+  background-color: rgb(68, 68, 67);
+  border-color: rgb(152, 117, 51);
+}
+
+.active {
+  background-color: rgb(68, 68, 67);
+  border-color: rgb(152, 117, 51);
 }
 
 img {

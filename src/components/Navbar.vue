@@ -1,9 +1,12 @@
 <script setup>
 import { ref, reactive } from "vue";
+import Searchbar from "./Searchbar.vue";
 
 const pages = [{ name: "All" }, { name: "Watched" }, { name: "Watchlist" }];
 
 const activePage = ref(0);
+
+const searchTerm = ref("");
 
 </script>
 
@@ -30,12 +33,14 @@ const activePage = ref(0);
       </div>
     </ul>
   </div>
+  <Searchbar  v-model="searchTerm"/>
 </template>
 
 <style scoped>
 #navbar {
   padding-bottom: 0;
   border-bottom: 1px solid #656565;
+  margin-bottom: 1rem;
 }
 ul {
   display: flex;

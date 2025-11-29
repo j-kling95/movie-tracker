@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive } from "vue";
 import Searchbar from "./Searchbar.vue";
+import Searchresults from "./Searchresults.vue";
 
 const pages = [{ name: "All" }, { name: "Watched" }, { name: "Watchlist" }];
 
@@ -34,6 +35,7 @@ const searchTerm = ref("");
     </ul>
   </div>
   <Searchbar  v-model="searchTerm"/>
+  <Searchresults />
 </template>
 
 <style scoped>

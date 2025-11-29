@@ -35,7 +35,9 @@ const searchTerm = ref("");
     </ul>
   </div>
   <Searchbar  v-model="searchTerm"/>
-  <Searchresults />
+  <Searchresults 
+  :search-term="searchTerm"
+  />
 </template>
 
 <style scoped>

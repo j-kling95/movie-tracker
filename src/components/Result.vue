@@ -3,14 +3,18 @@ defineProps({
   title: String,
   genre: String,
   releaseDate: String,
+  thumbnailLink: String,
 });
 </script>
 
 <template>
   <div class="results-container">
-    <h4>{{ title }}</h4>
-    <p>{{ genre }}</p>
-    <p>{{ releaseDate }}</p>
+    <img class="movie-thumbnail" :src="thumbnailLink" alt="">
+    <div class="data">
+        <h4>{{ title }}</h4>
+        <p>{{ genre }}</p>
+        <p>{{ releaseDate }}</p>
+    </div>
   </div>
 </template>
 
@@ -30,6 +34,15 @@ p {
 
 .results-container {
     display:flex;
-    flex-direction: column;
+    gap: 2rem;
+}
+
+.movie-thumbnail {
+    width:80px;
+    height: 100px;
+    background-color: grey;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    box-shadow: 3px 3px 5px #262626;
 }
 </style>

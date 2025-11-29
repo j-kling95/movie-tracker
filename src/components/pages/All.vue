@@ -8,7 +8,6 @@ const movies = json;
 <template>
   <h2>Movies</h2>
   <div class="movie-container" v-for="movie in movies">
-    <img class="movie-thumbnail" src="" alt="" />
     <Result
       :title="movie.title"
       :genre="movie.genre"

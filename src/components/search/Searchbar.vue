@@ -1,11 +1,16 @@
 <script setup>
-import { ref } from 'vue'
+
 const searchTerm = defineModel();
+
+defineProps({
+    changedResults: Boolean
+})
 
 </script>
 
 <template>
-  <div class="search-bar-container">
+  <p>{{ changedResults }}</p>
+  <div :class="{empty: searchTerm === '', 'no-results': !changedResults}" class="search-bar-container">
     <input v-model="searchTerm" type="text" placeholder="Search for movies" />
   </div>
   <!-- <p>The search term is {{ searchTerm }}</p> -->
@@ -15,12 +20,16 @@ const searchTerm = defineModel();
 .search-bar-container {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem 0.5rem;
+  padding: 0.5rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: white;
   width: 90%;
   margin: 0 auto;
+}
+.empty,
+.no-results {
+    border-radius: 10px;
 }
 input {
   color: rgb(68, 68, 68);

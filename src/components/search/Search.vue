@@ -1,10 +1,10 @@
 <script setup>
-import { ref  } from "vue";
+import { ref } from "vue";
 import Searchbar from "./Searchbar.vue";
 import Searchresults from "./Searchresults.vue";
 
 const searchTerm = ref("");
-const results = true;
+const results = ref(false);
 
 </script>
 

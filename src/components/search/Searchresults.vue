@@ -45,7 +45,7 @@ watch(() => activeMovies.value.length, (newValue, oldValue) => {
 </script>
 
 <template>
-    <p>{{ activeMovies.length }}</p>
+    <!-- <p>{{ activeMovies.length }}</p> -->
   <div :class="{ empty: activeMovies.length === 0 }" class="search-results">
     <div class="search-result-container" v-for="movie in activeMovies">
       <Result

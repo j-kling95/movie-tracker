@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <p>{{ changedResults }}</p>
+  <!-- <p>{{ changedResults }}</p> -->
   <div :class="{empty: searchTerm === '', 'no-results': !changedResults}" class="search-bar-container">
     <input v-model="searchTerm" type="text" placeholder="Search for movies" />
   </div>

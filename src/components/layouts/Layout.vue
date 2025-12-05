@@ -27,11 +27,23 @@ import Navbar from "../Navbar.vue";
 
 <style scoped>
 .layout {
-  padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
-main {
-  padding: 2rem 0;
+main,
+header,
+footer {
+  padding: 1rem 2rem 0;
+  border-radius: inherit;
+  background-color: inherit;
+}
+
+header {
+    max-height: fit-content;
+    z-index: 2;
+    position: sticky;
+    top: 0;
 }
 
 footer {

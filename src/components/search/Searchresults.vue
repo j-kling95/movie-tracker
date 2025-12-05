@@ -73,6 +73,7 @@ watch(() => activeMovies.value.length, (newValue, oldValue) => {
   margin: 0 auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+
 }
 
 .search-result-container {

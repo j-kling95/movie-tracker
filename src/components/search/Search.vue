@@ -9,11 +9,15 @@ const results = ref(false);
 </script>
 
 <template>
-  <Searchbar  :changed-results="results" v-model="searchTerm"/>
-  <Searchresults 
-  @changed-results="results = !results"
-  :search-term="searchTerm"
-  />
+  <div class="search-container">
+      <Searchbar  :changed-results="results" v-model="searchTerm"/>
+      <Searchresults
+      @changed-results="results = !results"
+      :search-term="searchTerm"
+      />
+  </div>
 </template>
 
-<style computed></style>
+<style computed>
+
+</style>

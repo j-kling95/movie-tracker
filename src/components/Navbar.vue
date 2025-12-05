@@ -31,16 +31,15 @@ const activePage = ref(0);
         </li>
       </div>
     </ul>
+    <Search />
   </div>
-  <Search />
 </template>
 
 <style scoped>
 #navbar {
-  padding-bottom: 0;
-  border-bottom: 1px solid #656565;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
+
 ul {
   display: flex;
   list-style: none;

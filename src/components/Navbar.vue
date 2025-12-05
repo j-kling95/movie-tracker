@@ -14,7 +14,7 @@ const activePage = ref(0);
     <ul>
       <div class="home-container" :class="{activelogo: activePage == 0}">
         <li class="logo">
-          <a href="#" @click="activePage = 0"
+          <a href="#" @click="$parent.$emit('changePage', 0)"
             ><img src="../assets/platypus-logo.png" alt="Ernie-Logo"
           /></a>
         </li>
@@ -24,7 +24,7 @@ const activePage = ref(0);
           <a
             href="#"
             class="pages"
-            @click="activePage = index + 1"
+            @click="$parent.$emit('changePage', index + 1)"
             :class="{ active: activePage == index + 1 }"
             >{{ page.name }}</a
           >

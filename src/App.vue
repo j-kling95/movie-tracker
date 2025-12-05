@@ -5,12 +5,13 @@ import All from "./components/pages/All.vue";
 import Home from "./components/pages/Home.vue";
 import Watched from "./components/pages/Watched.vue";
 import Watchlist from "./components/pages/Watchlist.vue";
+import { ref } from 'vue';
 
-const activePage = 1;
+const activePage = ref(0);
 </script>
 
 <template>
-    <Layout>
+    <Layout @change-page="(n) => activePage = n">
         <Home v-if="activePage == 0" />
         <All v-if="activePage == 1" />
         <Watched v-if="activePage == 2" />

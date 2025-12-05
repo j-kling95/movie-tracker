@@ -1,5 +1,8 @@
 <script setup>
 import Navbar from "../Navbar.vue";
+
+defineEmits(["changePage"]);
+
 </script>
 
 <template>
@@ -63,6 +66,10 @@ header {
 }
 
 footer {
+    border-top: 1px solid rgb(77,76, 76);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

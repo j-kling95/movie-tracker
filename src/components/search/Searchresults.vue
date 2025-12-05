@@ -13,11 +13,15 @@ const activeMovies = computed(() => {
   let updatedMovies = [];
   for (let object of movies) {
     delete object.rating;
+    console.log(object);
     for (let key of Object.keys(object)) {
+
       let value = String(object[key]).toLowerCase();
       let term = searchTerm.searchTerm.toLowerCase();
-      if (value.search(term) !== -1 && term != "") {
+      if (value.search(term) !== -1 && term != "") { 
         updatedMovies.push(object);
+        console.log("object found");
+        break;
       }
     }
   }

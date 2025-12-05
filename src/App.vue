@@ -5,9 +5,11 @@ import All from "./components/pages/All.vue";
 import Home from "./components/pages/Home.vue";
 import Watched from "./components/pages/Watched.vue";
 import Watchlist from "./components/pages/Watchlist.vue";
-import { ref } from 'vue';
+import { ref, provide } from 'vue';
 
 const activePage = ref(0);
+provide('key', activePage);
+
 </script>
 
 <template>

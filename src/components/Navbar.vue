@@ -1,10 +1,10 @@
 <script setup>
-import { ref  } from "vue";
+import { inject, ref  } from "vue";
 import Search from "./search/Search.vue";
 
 const pages = [{ name: "All" }, { name: "Watched" }, { name: "Watchlist" }];
 
-const activePage = ref(0);
+const activePage = inject('key');
 
 
 </script>

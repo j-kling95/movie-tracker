@@ -38,6 +38,9 @@ const activePage = ref(0);
 <style scoped>
 #navbar {
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 ul {

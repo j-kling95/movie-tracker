@@ -10,23 +10,13 @@ const activePage = 1;
 </script>
 
 <template>
-  <div>
     <Layout>
-      <Home v-if="activePage == 0" />
-      <All v-if="activePage == 1" />
-      <Watched v-if="activePage == 2" />
-      <Watchlist v-if="activePage == 3" />
+        <Home v-if="activePage == 0" />
+        <All v-if="activePage == 1" />
+        <Watched v-if="activePage == 2" />
+        <Watchlist v-if="activePage == 3" />
     </Layout>
-  </div>
 </template>
 <style scoped>
-h1 {
-  color: rgb(152, 117, 51);
-}
 
-div {
-  background-color: rgb(47, 47, 47);
-  border-radius: 10px;
-  box-shadow: 0 0 2px #656565;
-}
 </style>

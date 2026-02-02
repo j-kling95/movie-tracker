@@ -69,11 +69,18 @@ watch(() => activeMovies.value.length, (newValue, oldValue) => {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  height: 60vh;
   width: 90%;
   margin: 0 auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  scroll-behavior: smooth;
+  overflow: auto;
 
+}
+
+.search-results::-webkit-scrollbar {
+    display: none;
 }
 
 .search-result-container {
@@ -82,11 +89,14 @@ watch(() => activeMovies.value.length, (newValue, oldValue) => {
   border-radius: 10px;
 }
 
+
+
 .search-result-container:hover {
   background-color: #dfdfdf;
 }
 
 .empty {
   padding: 0;
+  height: auto;
 }
 </style>

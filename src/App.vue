@@ -8,6 +8,7 @@ import Watchlist from "./components/pages/Watchlist.vue";
 import { ref, provide } from 'vue';
 
 const activePage = ref(0);
+
 provide('key', activePage);
 
 </script>

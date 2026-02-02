@@ -32,9 +32,9 @@ defineEmits(["changePage"]);
 .layout {
     display: flex;
     flex-direction: column;
-    max-height: 95vh;
-    overflow: auto;
+    height: 95vh;
     scroll-behavior: smooth;
+    overflow: auto;
 
 
     background-color: rgb(47, 47, 47);
@@ -63,6 +63,11 @@ header {
     position: sticky;
     top: 0.5rem;
     box-shadow: 0 0 20px rgb(77, 76, 76);
+}
+
+main {
+    flex-grow: 1;
+    align-content: center;
 }
 
 footer {

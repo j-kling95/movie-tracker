@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "releaseDate": "2010-07-16",
+    "rating": 0
+  },
+  {
+    "title": "The Godfather",
+    "genre": "Crime",
+    "releaseDate": "1972-03-24",
+    "rating": 0
+  },
+  {
+    "title": "Pulp Fiction",
+    "genre": "Crime",
+    "releaseDate": "1994-10-14",
+    "rating": 0
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "releaseDate": "2008-07-18",
+    "rating": 0
+  },
+  {
+    "title": "Forrest Gump",
+    "genre": "Drama",
+    "releaseDate": "1994-07-06",
+    "rating": 0
+  },
+  {
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "releaseDate": "1999-03-31",
+    "rating": 0
+  },
+  {
+    "title": "Jurassic Park",
+    "genre": "Adventure",
+    "releaseDate": "1993-06-11",
+    "rating": 0
+  },
+  {
+    "title": "Titanic",
+    "genre": "Romance",
+    "releaseDate": "1997-12-19",
+    "rating": 0
+  },
+  {
+    "title": "Back to the Future",
+    "genre": "Sci-Fi",
+    "releaseDate": "1985-07-03",
+    "rating": 0
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "releaseDate": "1994-09-23",
+    "rating": 0
+  },
+  {
+    "title": "Gladiator",
+    "genre": "Historical Drama",
+    "releaseDate": "2000-05-05",
+    "rating": 0
+  },
+  {
+    "title": "The Lion King",
+    "genre": "Animation",
+    "releaseDate": "1994-06-24",
+    "rating": 0
+  },
+  {
+    "title": "Avatar",
+    "genre": "Sci-Fi",
+    "releaseDate": "2009-12-18",
+    "rating": 0
+  },
+  {
+    "title": "The Avengers",
+    "genre": "Action",
+    "releaseDate": "2012-05-04",
+    "rating": 0
+  },
+  {
+    "title": "Fight Club",
+    "genre": "Drama",
+    "releaseDate": "1999-10-15",
+    "rating": 0
+  },
+  {
+    "title": "Toy Story",
+    "genre": "Animation",
+    "releaseDate": "1995-11-22",
+    "rating": 0
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "genre": "Thriller",
+    "releaseDate": "1991-02-14",
+    "rating": 0
+  },
+  {
+    "title": "Star Wars: A New Hope",
+    "genre": "Sci-Fi",
+    "releaseDate": "1977-05-25",
+    "rating": 0
+  },
+  {
+    "title": "The Terminator",
+    "genre": "Sci-Fi",
+    "releaseDate": "1984-10-26",
+    "rating": 0
+  },
+  {
+    "title": "Casablanca",
+    "genre": "Romance",
+    "releaseDate": "1942-11-26",
+    "rating": 0
+  }
+]

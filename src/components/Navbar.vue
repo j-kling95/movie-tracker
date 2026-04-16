@@ -34,7 +34,6 @@ const activePage = inject("key");
                 </li>
             </div>
         </ul>
-        <Search class="search" />
     </div>
 </template>
 
@@ -42,7 +41,6 @@ const activePage = inject("key");
 #navbar {
     padding-bottom: 1rem;
     flex-direction: column;
-    height: 210px;
 }
 
 ul {
@@ -50,7 +48,7 @@ ul {
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .home-container {

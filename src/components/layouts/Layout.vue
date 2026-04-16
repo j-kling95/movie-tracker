@@ -2,7 +2,6 @@
 import Navbar from "../Navbar.vue";
 
 defineEmits(["changePage"]);
-
 </script>
 
 <template>
@@ -36,7 +35,6 @@ defineEmits(["changePage"]);
     scroll-behavior: smooth;
     overflow: auto;
 
-
     background-color: rgb(47, 47, 47);
 
     border-radius: 10px;
@@ -67,11 +65,10 @@ header {
 
 main {
     flex-grow: 1;
-    align-content: center;
 }
 
 footer {
-    border-top: 1px solid rgb(77,76, 76);
+    border-top: 1px solid rgb(77, 76, 76);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: 1rem;

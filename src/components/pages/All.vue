@@ -1,11 +1,16 @@
 <script setup>
+import { ref } from "vue";
 import Result from "../Result.vue";
 import json from "../../assets/movies.json";
+import Search from "../search/Search.vue";
 
 const movies = json;
+
+const searchTerm = ref("");
 </script>
 
 <template>
+    <Search @not-empty="(inputText) => searchTerm = inputText" class="search" />
     <h2>Movies</h2>
     <div class="movie-container" v-for="movie in movies">
         <Result
